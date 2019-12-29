@@ -18,6 +18,8 @@ dependencies {
 }
 
 test {
+    // Make system properties available in tests
+    systemProperties System.getProperties()
  useJUnitPlatform()
  testLogging {
   events "passed", "skipped", "failed"
